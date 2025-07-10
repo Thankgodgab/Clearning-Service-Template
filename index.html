@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CleanTo</title>
+</head>
+
+<body>
+    <header class="relative">
+        <div class="w-full h-full flex flex-col items-center justify-center">
+            <div class="hidden xl:flex flex-col min-h-[70px] px-[20px] py-[20px] w-full bg-transparent justify-center h-full items-center"
+                style="
+            background: linear-gradient(
+              120deg,
+              var(--color-primary) 61%,
+              var(--color-white) 50%
+            );
+          ">
+                <div
+                    class="flex-grow flex-shrink-1 self-auto basis-auto items-center justify-center flex-wrap flex-col w-full h-full">
+                    <div class="flex justify-between items-center w-full gap-3 h-full">
+                        <div class="flex items-center justify-start">
+                            <ul
+                                class="flex flex-wrap items-center justify-start gap-6 text-lg font-normal text-[var(--color-white)]">
+                                <li class="flex gap-4 items-center">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <span>+1 (555) 123-4567</span>
+                                </li>
+                                <li class="flex gap-4 items-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>info@cleanto.com</span>
+                                </li>
+                                <li class="flex gap-4 items-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>123 Clean St, Clean City, CL 12345</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <ul
+                                class="flex flex-wrap items-center justify-start gap-8 text-color-secondary text-lg font-normal">
+                                <li class="flex gap-2 items-center border-r-3 pr-4 border-"
+                                    style="border-color: var(--color-secondary)">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>Sunday-Friday / 9AM-11PM</span>
+                                </li>
+                                <div class="flex gap-4 items-center">
+                                    <ul>
+                                        <li class="flex gap-8 text-2xl">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col min-h-[100px] px-[40px] py-[20px] w-full bg-transparent">
+                <div class="flex w-full h-full items-center justify-between">
+                    <div class="h-full">
+                        <img src="./assets/logo.png" alt="company logo"
+                            class="w-[150px] md:w-[190px] md:h-[90px] h-[60px]" />
+                    </div>
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <nav class="flex items-center justify-between w-full h-full gap-8">
+                            <ul
+                                class="hidden lg:flex items-center justify-start gap-6 font-normal text-[var(--color-secondary)]">
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">Our Services</a>
+                                </li>
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <button id="openMenuBtn" class="border-1 border-[var(--color-primary)] hover:bg-[var(--color-accent)] p-3 text-[var(--color-primary)] transition-colors duration-300 lg:hidden flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <button class="hidden md:flex bg-[var(--color-primary)] text-white p-6 text-xl font-semibold transition-colors duration-300 hover:bg-[var(--color-accent)]">
+                                Make An Appointment
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar" class="max-w-[360px] w-full h-screen p-[20px] bg-[var(--color-primary)] absolute top-0 left-[-360px]">
+            <div class="flex w-full items-center justify-between">
+                <img src="./assets/logo-white" alt="company logo" class="w-[100px] h-[50px]" />
+                <button id="closeMenuBtn" class="border-1 border-[var(--color-accent)] hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] p-3 text-[var(--color-accent)] active:text-[var(--color-white)] transition-colors duration-300 flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <div class="flex flex-col mt-4">
+                <ul class="flex flex-col gap-4">
+                    <li class="py-2">
+                        <a href="#home" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Home</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#about-us" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">About Us</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#our-services" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Our Services</a>
+                    </li>
+                    <li class="py-2">
+                        <Contact href="#contact" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-background)]  h-full w-full">
+            <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center justify-ceter gap-10">
+                <div class="py-[50px] px-0 flex flex-col  h-full bg-[url('./assets/app_bg-1.png')] md:pr-[25px] bg-no-repeat bg-contain bg-top object-fill">
+                        <h3 id="heading-subtitle" class="text-[20px] text-[var(--color-primary)] font-semibold my-4">We Keep All Clean</h3>
+                        <h2 id="heading-title" class="text-[55px] md:text-[80px] leading-[65px] md:leading-[100px] text-[var(--color-secondary)] font-bold my-4">Cleaning For A Healthier Home</h2>
+                        <p id="heading-description" class="text-[var(--color-secondary)] text-lg leading-[25px] font-normal my-4">
+                            At Cleanto, we believe that a clean home is a happy home. Our professional cleaning services are designed to provide you with a spotless and healthy living environment. Whether you need a one-time deep clean or regular maintenance, our team is here to help you achieve the cleanliness you deserve.
+                        </p>
+                        <a href="#" class="bg-[var(--color-primary)] hover:bg-[var(--color-accent)] px-[35px] py-[25px] w-fit text-[var(--color-white)] text-[16px] font-medium transition-colors duration-300 ease-in-out">Explore More</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 h-full gap-5">
+                    <div class="flex flex-col h-full justify-center items-center">
+                        <div class="h-1/2 w-full block mb-5">
+                            <div class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-t-[155px] h-full w-full">
+                                <img src="./assets/hero1.jpg" alt="image of cleaning service" class="w-full h-full object-cover rounded-t-[155px]">
+                            </div>
+                        </div>
+                        <div class="h-1/2 w-full block">
+                            <div class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-[30px] h-full w-full">
+                                <img src="./assets/hero3.jpg" alt="image of cleaning service" class="w-full h-full object-cover rounded-[30px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full justify-center items-center">
+                        <div class="w-full block">
+                            <div class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-[30px] h-full w-full">
+                                <img src="./assets/hero2.jpg" alt="image of cleaning service" class="w-full h-full object-cover rounded-[30px]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="about-us" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-white)] h-full w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
+                    <div class="mt-[40px] px-[35px] pb-[40px] bg-[var(--color-primary)] items-center justify-center"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

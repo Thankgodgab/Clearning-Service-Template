@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+
+
+:root {
+  --color-primary: #0036AB;
+  --color-secondary: #000000;
+  --color-text: #828388;
+  --color-accent: #4FABE4;
+  --color-background: #0015240D;
+
+  --color-white: #ffffff;
+  --color-border-color: #eaeaeb;
+  --color-txt-color: #575A5F;
+  --color-txt-h-color: #181D23;
+  --color-txt-a-color: #0058E6;
+  --color-txt-m-color: #96989B;
+
+  --color-success-bg-color: #75ffd8;
+  --color-success-border-color: #007f5b;
+  --color-error-bg-color: #ffcccc;
+  --color-error-border-color: #d60000;
+
+  --color-btn-txt-color: #ffffff;
+  --color-btn-bg-color: #0058E6;
+  --color-btn-bg-hover-color: #0048bd;
+
+  --font-sora: 'Sora', sans-serif;
+}
+
+body {
+  font-family: var(--font-sora);
+  background-color: var(--color-white-color);
+  color: var(--color-secondary  );
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar slide-in/out animation */
+#sidebar {
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
