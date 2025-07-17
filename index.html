@@ -88,10 +88,12 @@
                                     <a href="#">Contact</a>
                                 </li>
                             </ul>
-                            <button id="openMenuBtn" class="border-1 border-[var(--color-primary)] hover:bg-[var(--color-accent)] p-3 text-[var(--color-primary)] transition-colors duration-300 lg:hidden flex items-center justify-center text-2xl">
+                            <button id="openMenuBtn"
+                                class="border-1 border-[var(--color-primary)] hover:bg-[var(--color-accent)] p-3 text-[var(--color-primary)] transition-colors duration-300 lg:hidden flex items-center justify-center text-2xl">
                                 <i class="fa-solid fa-bars"></i>
                             </button>
-                            <button class="hidden md:flex bg-[var(--color-primary)] text-white p-6 text-xl font-semibold transition-colors duration-300 hover:bg-[var(--color-accent)]">
+                            <button
+                                class="hidden md:flex bg-[var(--color-primary)] text-white p-6 text-xl font-semibold transition-colors duration-300 hover:bg-[var(--color-accent)]">
                                 Make An Appointment
                             </button>
                         </nav>
@@ -99,59 +101,86 @@
                 </div>
             </div>
         </div>
-        <div id="sidebar" class="max-w-[360px] w-full h-screen p-[20px] bg-[var(--color-primary)] absolute top-0 left-[-360px]">
+        <div id="sidebar"
+            class="max-w-[360px] w-full h-screen p-[20px] bg-[var(--color-primary)] absolute top-0 left-[-360px]">
             <div class="flex w-full items-center justify-between">
                 <img src="./assets/logo-white" alt="company logo" class="w-[100px] h-[50px]" />
-                <button id="closeMenuBtn" class="border-1 border-[var(--color-accent)] hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] p-3 text-[var(--color-accent)] active:text-[var(--color-white)] transition-colors duration-300 flex items-center justify-center text-2xl">
+                <button id="closeMenuBtn"
+                    class="border-1 border-[var(--color-accent)] hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] p-3 text-[var(--color-accent)] active:text-[var(--color-white)] transition-colors duration-300 flex items-center justify-center text-2xl">
                     <i class="fa-solid fa-x"></i>
                 </button>
             </div>
             <div class="flex flex-col mt-4">
                 <ul class="flex flex-col gap-4">
                     <li class="py-2">
-                        <a href="#home" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Home</a>
+                        <a href="#home"
+                            class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Home</a>
                     </li>
                     <li class="py-2">
-                        <a href="#about-us" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">About Us</a>
+                        <a href="#about-us"
+                            class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">About
+                            Us</a>
                     </li>
                     <li class="py-2">
-                        <a href="#our-services" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Our Services</a>
+                        <a href="#our-services"
+                            class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Our
+                            Services</a>
                     </li>
                     <li class="py-2">
-                        <Contact href="#contact" class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">Contact</a>
+                        <Contact href="#contact"
+                            class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">
+                            Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <section id="home" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-background)]  h-full w-full">
+        <section id="home"
+            class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-background)]  h-full w-full">
             <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center justify-ceter gap-10">
-                <div class="py-[50px] px-0 flex flex-col  h-full bg-[url('./assets/app_bg-1.png')] md:pr-[25px] bg-no-repeat bg-contain bg-top object-fill">
-                        <h3 id="heading-subtitle" class="text-[20px] text-[var(--color-primary)] font-semibold my-4">We Keep All Clean</h3>
-                        <h2 id="heading-title" class="text-[55px] md:text-[80px] leading-[65px] md:leading-[100px] text-[var(--color-secondary)] font-bold my-4">Cleaning For A Healthier Home</h2>
-                        <p id="heading-description" class="text-[var(--color-secondary)] text-lg leading-[25px] font-normal my-4">
-                            At Cleanto, we believe that a clean home is a happy home. Our professional cleaning services are designed to provide you with a spotless and healthy living environment. Whether you need a one-time deep clean or regular maintenance, our team is here to help you achieve the cleanliness you deserve.
-                        </p>
-                        <a href="#" class="bg-[var(--color-primary)] hover:bg-[var(--color-accent)] px-[35px] py-[25px] w-fit text-[var(--color-white)] text-[16px] font-medium transition-colors duration-300 ease-in-out">Explore More</a>
+                <div
+                    class="py-[50px] px-0 flex flex-col  h-full bg-[url('./assets/app_bg-1.png')] md:pr-[25px] bg-no-repeat bg-contain bg-top object-fill">
+                    <h3 id="heading-subtitle" class="text-[20px] text-[var(--color-primary)] font-semibold my-4">We Keep
+                        All Clean</h3>
+                    <h2 id="heading-title"
+                        class="text-[55px] md:text-[80px] leading-[65px] md:leading-[100px] text-[var(--color-secondary)] font-bold my-4">
+                        Cleaning For A Healthier Home</h2>
+                    <p id="heading-description"
+                        class="text-[var(--color-secondary)] text-lg leading-[25px] font-normal my-4">
+                        At Cleanto, we believe that a clean home is a happy home. Our professional cleaning services are
+                        designed to provide you with a spotless and healthy living environment. Whether you need a
+                        one-time deep clean or regular maintenance, our team is here to help you achieve the cleanliness
+                        you deserve.
+                    </p>
+                    <a href="#"
+                        class="bg-[var(--color-primary)] hover:bg-[var(--color-accent)] px-[35px] py-[25px] w-fit text-[var(--color-white)] text-[16px] font-medium transition-colors duration-300 ease-in-out">Explore
+                        More
+                    </a>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 h-full gap-5">
                     <div class="flex flex-col h-full justify-center items-center">
                         <div class="h-1/2 w-full block mb-5">
-                            <div class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-t-[155px] h-full w-full">
-                                <img src="./assets/hero1.jpg" alt="image of cleaning service" class="w-full h-full object-cover rounded-t-[155px]">
+                            <div
+                                class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-t-[155px] h-full w-full">
+                                <img src="./assets/hero1.jpg" alt="image of cleaning service"
+                                    class="w-full h-full object-cover rounded-t-[155px]">
                             </div>
                         </div>
                         <div class="h-1/2 w-full block">
-                            <div class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-[30px] h-full w-full">
-                                <img src="./assets/hero3.jpg" alt="image of cleaning service" class="w-full h-full object-cover rounded-[30px]">
+                            <div
+                                class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-[30px] h-full w-full">
+                                <img src="./assets/hero3.jpg" alt="image of cleaning service"
+                                    class="w-full h-full object-cover rounded-[30px]">
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-col h-full justify-center items-center">
                         <div class="w-full block">
-                            <div class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-[30px] h-full w-full">
-                                <img src="./assets/hero2.jpg" alt="image of cleaning service" class="w-full h-full object-cover rounded-[30px]">
+                            <div
+                                class="border-l border-t border-b border-[var(--color-accent)] pl-[10px] ml-[-2px] rounded-[30px] h-full w-full">
+                                <img src="./assets/hero2.jpg" alt="image of cleaning service"
+                                    class="w-full h-full object-cover rounded-[30px]">
                             </div>
                         </div>
                     </div>
@@ -163,22 +192,166 @@
             <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10">
                 <div class="grid grid-cols-1 gap-4 relative">
                     <div class="grid grid-cols-1 md:grid-cols-2 justify-center gap-4 h-full w-full">
-                        <div class="mt-[50px] px-[35px] pb-[40px] bg-[var(--color-primary)] w-full h-fit items-center justify-center">
+                        <div class="mt-[50px] px-[35px] pb-[40px] bg-[var(--color-primary)] w-[70%] md:w-full h-fit items-center justify-center">
                             <div class="flex w-full mb-[20px] gap-3 pt-7">
-                                <span id="yoe" class="text-[38px] font-bold leading-[48px] text-[var(--color-white)] self-end">18</span>
-                                <span class="text-lg font-normal text-[var(--color-white)] leading-[24px] self-end mb-2">YEARS</span>
+                                <span id="yoe"
+                                    class="text-[38px] font-bold leading-[48px] text-[var(--color-white)] self-end">18</span>
+                                <span
+                                    class="text-lg font-normal text-[var(--color-white)] leading-[24px] self-end mb-2">YEARS</span>
                             </div>
-                            <h2 class="text-lg text-[var(--color-white)] leading-[24px]">Experience in Cleaning Service</h2>
+                            <h2 class="text-lg text-[var(--color-white)] leading-[24px]">Experience in Cleaning Service
+                            </h2>
                         </div>
-                        <div class="h-[450px]">
-                            <img src="./assets/hero2.jpg" alt="image of services offer" class="w-full h-full object-cover">
+                        <div class="h-[302px] md:h-[414px] w-full">
+                            <img src="./assets/hero2.jpg" alt="image of services offer"
+                                class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <div class="w-[500px] h-[500px] absolute bottom-[-350px]">
-                        <img src="./assets/hero2.jpg" alt="image of services" class="border-[20px] border-[var(--color-white)]">
+                    <div class="w-[94%] md:w-[70%] h-[350px] absolute bottom-[-200px] md:button-[-350px    ] items-center justify-center">
+                        <img src="./assets/hero2.jpg" alt="image of services"
+                            class="border-[20px] border-[var(--color-white)] h-full w-full">
                     </div>
                 </div>
-                <div class=""></div>
+                <div class="flex flex-col items-start justify-items-start gap-4 w-full h-full pt-[100px]">
+                    <div class="w-full h-fit my-5 ml-10">
+                        <h2 class="text-[var(--color-primary)] text-[16px] font-normal ">What We Are</h2>
+                    </div>
+                    <div class="flex flex-col gap-6 items-start justify-items-start">
+                        <h2 class="mt-2 mb-4 not-visited:text-[var(--color-secondary)] text-[36px] leading-[48px] font-bold">
+                            Where Cleanliness Is Next To Godliness
+                        </h2>
+                        <p class="text-[16px] mb-3.5 text-[var(--color-secondary)]">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                        </p>
+                        <div class="flex gap-5 flex-col md:flex-row w-full h-fit">
+                            <div class="flex flex-col gap-5">
+                                <h2 class="text-[20px] font-semibold">Customer Focused Reviews</h2>
+                                <p class="text-[var(--color-text)] text-[14px] leading-[24px]">
+                                    Morbi praesent nascetur maecenas ligula habitasse tellus duis quisque efficitur sollicitudin senectus.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-5">
+                                <h2 class="text-[20px] font-semibold">We Are Committed</h2>
+                                <p class="text-[var(--color-text)] text-[14px] leading-[24px]">
+                                    Morbi praesent nascetur maecenas ligula habitasse tellus duis quisque efficitur sollicitudin senectus.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#"
+                        class="bg-[var(--color-primary)] hover:bg-[var(--color-accent)] px-[35px] py-[25px] w-fit text-[var(--color-white)] text-[16px] font-medium transition-colors duration-300 ease-in-out mt-3">
+                        More About Us
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mt-[100px] py-[60px] w-full min-h-[250px] flex items-center justify-center  bg-[url('./assets/banner-1.png')] bg-[var(--color-primary)]">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-[30px] items-center justify-center h-fit w-full">
+                <div class="md:border-r border-[var(--color-accent)] border-dotted flex flex-col gap-5 items-center justify-center">
+                    <h2 class="font-bold text-[38px] text-[var(--color-white)] ">
+                        261
+                    </h2>
+                    <span class="text-[14px] text-[var(--color-white)] font-normal">Active Project</span>
+                </div>
+                <div class="md:border-r border-[var(--color-accent)] border-dotted flex flex-col gap-5 items-center justify-center">
+                    <h2 class="font-bold text-[38px] text-[var(--color-white)] ">
+                        100
+                    </h2>
+                    <span class="text-[14px] text-[var(--color-white)] font-normal">Customer Satisfaction</span>
+                </div>
+                <div class="md:border-r border-[var(--color-accent)] border-dotted flex flex-col gap-5 items-center justify-center">
+                    <h2 class="font-bold text-[38px] text-[var(--color-white)] ">
+                        48
+                    </h2>
+                    <span class="text-[14px] text-[var(--color-white)] font-normal">Awards Winning</span>
+                </div>
+                <div class="border-[var(--color-accent)] border-dotted flex flex-col gap-5 items-center justify-center">
+                    <h2 class="font-bold text-[38px] text-[var(--color-white)] ">
+                        125
+                    </h2>
+                    <span class="text-[14px] text-[var(--color-white)] font-normal">Expert Team</span>
+                </div>
+            </div>
+        </div>
+        <section class="px-[10px]  py-[70px] md:py-[100px] bg-[var(--color-white)] h-full w-full">
+            <div class="w-full h-full flex flex-col items-center justify-center">
+                <div class="w-full flex gap-5 ">
+                    <div class="w-full h-full my-5 ml-10 flex flex-col gap-4 items-start justify-items-start">
+                        <h2 class="text-[var(--color-primary)] text-[16px] font-normal ">What We Are</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-4 items-center justify-center gap-[40px] w-full">
+                            <div class="col-span-3 flex gap-4 flex-col md:flex-row">
+                                <h2 class=" md:w-1/2 w-full mt-2 mb-4 text-[var(--color-secondary)] text-[26px] md:text-[36px] leading-[38px] font-bold">
+                                Bringing Freshness Back To Life
+                                </h2>
+                                <p class="md:w-1/2 w-full text-[14px] text-[var(--color-text)] font-normal leading-[24px]">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which 
+                                </p>
+                            </div>
+                            <a href="#" class="bg-[var(--color-primary)] hover:bg-[var(--color-accent)] px-[35px] py-[25px] w-fit text-[var(--color-white)] text-[16px] font-medium transition-colors duration-300 ease-in-out mt-3">
+                                More About Us 
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-[100px] lg:gap-0 items-center justify-center mt-[100px]">
+                    <div class="mx-auto p-[25px] pt-[47px] relative flex flex-col gap-5 w-[380px] shadow-md" >
+                        <div class="p-6 bg-[var(--color-primary)] text-[var(--color-white)] fill-[var(--color-white)] text-[40px] text-center w-[100px] h-[100px] mt-[-100px]">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="flex flex-col gap-5 items-cente justify-center text-left">
+                            <h2 class="text-[var(--color-secondary)] text-[22px] font-semibold leading-[20px] ">
+                                Regular Home Cleaning
+                            </h2>
+                            <p class="text-[14px] text-[var(--color-text)] font-normal leading-[24px] ">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mx-auto p-[25px] pt-[47px] relative flex flex-col gap-5 w-[380px] shadow-md" >
+                        <div class="p-6 bg-[var(--color-primary)] text-[var(--color-white)] fill-[var(--color-white)] text-[40px] text-center w-[100px] h-[100px] mt-[-100px]">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="flex flex-col gap-5 items-cente justify-center text-left">
+                            <h2 class="text-[var(--color-secondary)] text-[22px] font-semibold leading-[20px] ">
+                                Regular Home Cleaning
+                            </h2>
+                            <p class="text-[14px] text-[var(--color-text)] font-normal leading-[24px] ">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mx-auto p-[25px] pt-[47px] relative flex flex-col gap-5 w-[380px] shadow-md" >
+                        <div class="p-6 bg-[var(--color-primary)] text-[var(--color-white)] fill-[var(--color-white)] text-[40px] text-center w-[100px] h-[100px] mt-[-100px]">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="flex flex-col gap-5 items-cente justify-center text-left">
+                            <h2 class="text-[var(--color-secondary)] text-[22px] font-semibold leading-[20px] ">
+                                Regular Home Cleaning
+                            </h2>
+                            <p class="text-[14px] text-[var(--color-text)] font-normal leading-[24px] ">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="howItWorks" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-white)] h-full w-full">
+            <div class="flex flex-col w-full h-full items-center justify-center">
+                <div class="flex flex-col items-center justify-center w-1/2 mx-auto py-[20px] text-center gap-5">
+                    <h2 class="text-[var(--color-primary)] text-[16px] font-normal ">What We Are</h2>
+                    <h2 class=" mt-2 mb-4 text-[var(--color-secondary)] text-[26px] md:text-[36px] leading-[38px] font-bold">
+                        How We Works
+                    </h2>
+                    <p class="text-[14px] text-[var(--color-text)] font-normal leading-[24px]">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-6 ">
+                    
+                </div>
             </div>
         </section>
     </main>
