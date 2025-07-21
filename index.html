@@ -12,7 +12,7 @@
     <title>CleanTo</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header class="relative">
         <div class="w-full h-full flex flex-col items-center justify-center">
             <div class="hidden xl:flex flex-col min-h-[70px] px-[20px] py-[20px] w-full bg-transparent justify-center h-full items-center"
@@ -127,7 +127,7 @@
                             Services</a>
                     </li>
                     <li class="py-2">
-                        <Contact href="#contact"
+                        <a href="#contact"
                             class="text-[var(--color-white)] hover:text-[var(--color-accent)] active:text-[var(--color-accent)]">
                             Contact</a>
                     </li>
@@ -140,7 +140,7 @@
             class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-background)]  h-full w-full">
             <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center justify-ceter gap-10">
                 <div
-                    class="py-[50px] px-0 flex flex-col  h-full bg-[url('./assets/app_bg-1.png')] md:pr-[25px] bg-no-repeat bg-contain bg-top object-fill">
+                    class="py-[50px] px-0 flex flex-col  h-full bg-[url('./asets/app_bg-1.png')] md:pr-[25px] bg-no-repeat bg-contain bg-top object-fill">
                     <h3 id="heading-subtitle" class="text-[20px] text-[var(--color-primary)] font-semibold my-4">We Keep
                         All Clean</h3>
                     <h2 id="heading-title"
@@ -207,13 +207,13 @@
                                 class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <div class="w-[94%] md:w-[70%] h-[350px] absolute bottom-[-200px] md:button-[-350px    ] items-center justify-center">
+                    <div class="w-[94%] md:w-[70%] h-[350px] absolute bottom-[-200px] md:bottom-[-350px] items-center justify-center">
                         <img src="./assets/hero2.jpg" alt="image of services"
                             class="border-[20px] border-[var(--color-white)] h-full w-full">
                     </div>
                 </div>
                 <div class="flex flex-col items-start justify-items-start gap-4 w-full h-full pt-[100px]">
-                    <div class="w-full h-fit my-5 ml-10">
+                    <div class="w-full h-fit my-5 mt-[100px] md:mt-0 ml-0 md:ml-10">
                         <h2 class="text-[var(--color-primary)] text-[16px] font-normal ">What We Are</h2>
                     </div>
                     <div class="flex flex-col gap-6 items-start justify-items-start">
@@ -273,9 +273,9 @@
                 </div>
             </div>
         </div>
-        <section class="px-[10px]  py-[70px] md:py-[100px] bg-[var(--color-white)] h-full w-full">
+        <section class="container px-[10px] md:px-[50px]  py-[70px] md:py-[100px] bg-[var(--color-white)] h-full w-full items-center justify-center">
             <div class="w-full h-full flex flex-col items-center justify-center">
-                <div class="w-full flex gap-5 ">
+                <div class="w-full flex gap-5 items-center justify-center ">
                     <div class="w-full h-full my-5 ml-10 flex flex-col gap-4 items-start justify-items-start">
                         <h2 class="text-[var(--color-primary)] text-[16px] font-normal ">What We Are</h2>
                         
@@ -295,8 +295,8 @@
 
                     </div>
                 </div>
-                <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-[100px] lg:gap-0 items-center justify-center mt-[100px]">
-                    <div class="mx-auto p-[25px] pt-[47px] relative flex flex-col gap-5 w-[380px] shadow-md" >
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-[100px] md:gap-[50px] lg:gap-0 items-center justify-center mt-[100px]">
+                    <div class="p-[25px] pt-[47px] relative flex flex-col gap-5 max-w-[350px] shadow-md" >
                         <div class="p-6 bg-[var(--color-primary)] text-[var(--color-white)] fill-[var(--color-white)] text-[40px] text-center w-[100px] h-[100px] mt-[-100px]">
                             <i class="fa-solid fa-house"></i>
                         </div>
@@ -309,7 +309,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mx-auto p-[25px] pt-[47px] relative flex flex-col gap-5 w-[380px] shadow-md" >
+                    <div class="p-[25px] pt-[47px] relative flex flex-col gap-5 max-w-[350px] shadow-md" >
                         <div class="p-6 bg-[var(--color-primary)] text-[var(--color-white)] fill-[var(--color-white)] text-[40px] text-center w-[100px] h-[100px] mt-[-100px]">
                             <i class="fa-solid fa-house"></i>
                         </div>
@@ -322,7 +322,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mx-auto p-[25px] pt-[47px] relative flex flex-col gap-5 w-[380px] shadow-md" >
+                    <div class="p-[25px] pt-[47px] relative flex flex-col gap-5 max-w-[350px] shadow-md" >
                         <div class="p-6 bg-[var(--color-primary)] text-[var(--color-white)] fill-[var(--color-white)] text-[40px] text-center w-[100px] h-[100px] mt-[-100px]">
                             <i class="fa-solid fa-house"></i>
                         </div>
@@ -350,15 +350,103 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-6 mt-6">
-                    <div class="flex flex-col h-full items-center justify-center">
-                        <div class="w-64 h-64 clip-hexagon flex items-center justify-center">
+                    <div class="flex flex-col h-full items-center justify-center gap-6">
+                        <div class="w-[200px] h-60 clip-hexagon flex items-center justify-center">
+                            <img src="./assets/hero3.jpg" alt="" class="w-full h-full object-cover clip-hexagon">
+                        </div>
+                        <div class="flex flex-col gap-6 items-center justify-center text-center">
+                            <h2 class="text-[28px] leading-[38px] capitalize text-[var(--color-secondary)] font-semibold">
+                                Book Online
+                            </h2>
+                            <p class="text-sm text-[var(--color-text)] leading-6 font-normal">
+                                Book your cleaning service online in just a few clicks. Choose your preferred date and time, and we'll take care of the rest.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full items-center justify-center gap-6">
+                        <div class="w-[200px] h-60 clip-hexagon flex items-center justify-center">
                             <img src="./assets/hero2.jpg" alt="" class="w-full h-full object-cover clip-hexagon">
+                        </div>
+                        <div class="flex flex-col gap-6 items-center justify-center text-center">
+                            <h2 class="text-[28px] leading-[38px] capitalize text-[var(--color-secondary)] font-semibold">
+                                Get Expert Team
+                            </h2>
+                            <p class="text-sm text-[var(--color-text)] leading-6 font-normal">
+                                Our team of experts is ready to provide you with the best cleaning services. We ensure quality and satisfaction with every job.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full items-center justify-center gap-6">
+                        <div class="w-[200px] h-60 clip-hexagon flex items-center justify-center">
+                            <img src="./assets/hero1.jpg" alt="" class="w-full h-full object-cover clip-hexagon">
+                        </div>
+                        <div class="flex flex-col gap-6 items-center justify-center text-center">
+                            <h2 class="text-[28px] leading-[38px] capitalize text-[var(--color-secondary)] font-semibold">
+                                Enjoy Clean Home
+                            </h2>
+                            <p class="text-sm text-[var(--color-text)] leading-6 font-normal">
+                                Enjoy a clean and fresh home environment with our top-notch cleaning services. We take care of everything, so you can relax and enjoy your space.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- <section id="testimonies" class="px-[10px] md:px-[50px]  py-[70px] md:py-[100px] bg-[url('./assets/testimony-bg.jpg')] bg-no-repeat bg-cover h-full w-full items-center justify-center relative">
+            <div class="absolute top-0 left-0 w-full h-full bg-[var(--color-primary)] opacity-60 z-0"></div>
+            <div class="w-full h-full flex flex-col items-center justify-center z-20 relative">
+                <div class="w-full flex gap-5 items-center justify-center ">
+                    <div class="w-full h-full my-5 ml-10 flex flex-col gap-4 items-start justify-items-start text-center">
+                        <h2 class="text-[var(--color-white)] text-[16px] font-normal text-center ">What We Are</h2>
+                        <h2 class="mt-2 mb-4 text-[var(--color-white)] text-[26px] text-center md:text-[36px] leading-[38px] font-bold">
+                            Customer Testimonials
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+            
     </main>
+    <footer>
+        <div class=" w-full flex flex-col items-center justify-center  pt-[70px] md:t-[100px] pb-[50px] bg-[var(--color-primary)]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full px-[10px] md:px-[50px] pb-[50px]">
+                <div class="flex flex-col gap-6 items-start justify-center">
+                    <div class="w-full">
+                        <img src="./assets/logo-white" id="logo" alt="company logo" class="w-[150px] md:w-[200px] md:h-[100px] h-[60px]" />
+                    </div>
+                    <p class="text-sm font-normal text-[var(--color-white)] leading-6">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look
+                    </p>
+                    <div class="social-icons flex gap-2.5">
+                        <div class="w-[50px] h-[50px] bg-transparent hover:bg-[var(--color-accent)] border border-[var(--color-accent)] transition-colors duration-300 ease-in-out rounded-full flex items-center justify-center">
+                            <a href="#" class="text-[var(--color-white)] text-[24px]">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="w-[50px] h-[50px] bg-transparent hover:bg-[var(--color-accent)] border border-[var(--color-accent)] transition-colors duration-300 ease-in-out rounded-full flex items-center justify-center">
+                            <a href="#" class="text-[var(--color-white)] text-[24px]">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="w-[50px] h-[50px] bg-transparent hover:bg-[var(--color-accent)] border border-[var(--color-accent)] transition-colors duration-300 ease-in-out rounded-full flex items-center justify-center">
+                            <a href="#" class="text-[var(--color-white)] text-[24px]">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[var(--color-accent)] pt-[50px] flex flex-col gap-4 md:flex-row items-center justify-between w-full px-[10px] md:px-[50px]">
+                <div class="flex text-left text-[var(--color-white)]">
+                    <p class="text-sm w-full">Cleaning Service Template Kit By literesult</p>
+                </div>
+                <div class="flex text-right items-end text-[var(--color-white)]">
+                    <p class="text-sm w-full">Copyright @ 2025 .All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/index.js"></script>
 </body>
